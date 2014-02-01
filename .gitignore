@@ -11,3 +11,12 @@
 *.lai
 *.la
 *.a
+
+# Visual Studio
+**/Debug/*
+**/Release/*
+**/x64/*
+*.suo
+*.sdf
+*.opensdf
+**/ipch/*
