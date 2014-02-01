@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="UIObject">
+      <UniqueIdentifier>{729b59af-84dd-4c2d-90cc-2e0fab96224a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stdafx">
+      <UniqueIdentifier>{7805275c-4c8d-40f9-9992-a293cb61bd31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UIObject\2D">
+      <UniqueIdentifier>{38a782f8-01d7-49ec-95d0-4b451695222e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UIObject\3D">
+      <UniqueIdentifier>{dfaaebc8-fe60-47e0-958b-ab9e7fb6a2d6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="UIObject.h">
+      <Filter>UIObject</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>stdafx</Filter>
+    </ClInclude>
+    <ClInclude Include="UI2DObject.h">
+      <Filter>UIObject\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="UI3DObject.h">
+      <Filter>UIObject\3D</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="UIObject.cpp">
+      <Filter>UIObject</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>stdafx</Filter>
+    </ClCompile>
+    <ClCompile Include="UI2DObject.cpp">
+      <Filter>UIObject\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="UI3DObject.cpp">
+      <Filter>UIObject\3D</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
