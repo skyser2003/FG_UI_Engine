@@ -11,7 +11,7 @@ namespace FG
 		UI2DObject(int x, int y);
 		virtual ~UI2DObject() = 0;
 
-		virtual void Update(float dt) override;
+		virtual void Update(int dt) override;
 
 		virtual bool IsInner(int x, int y) const = 0;
 

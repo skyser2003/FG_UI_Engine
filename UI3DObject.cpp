@@ -16,7 +16,7 @@ namespace FG
 
 	}
 
-	void UI3DObject::Update(float dt)
+	void UI3DObject::Update(int dt)
 	{
 
 	}

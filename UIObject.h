@@ -8,6 +8,6 @@ namespace FG
 		UIObject();
 		virtual ~UIObject() = 0;
 
-		virtual void Update(float dt) = 0;
+		virtual void Update(int dt) = 0;
 	};
 }

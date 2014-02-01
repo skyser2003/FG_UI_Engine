@@ -16,7 +16,7 @@ namespace FG
 
 	}
 
-	void UI2DObject::Update(float dt)
+	void UI2DObject::Update(int dt)
 	{
 
 	}
