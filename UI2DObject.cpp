@@ -1,19 +1,17 @@
 #include "stdafx.h"
 #include "UI2DObject.h"
 
+#include "UI2DNullShape.h"
+
 namespace FG
 {
-	UI2DObject::UI2DObject() : UI2DObject(0, 0)
-	{
-
-	}
-	UI2DObject::UI2DObject(int x, int y) : mX(x), mY(y)
+	UI2DObject::UI2DObject() : mShape(new UI2DNullShape)
 	{
 
 	}
 	UI2DObject::~UI2DObject()
 	{
-
+		DeleteShape();
 	}
 
 	void UI2DObject::Update(int dt)
@@ -21,13 +19,19 @@ namespace FG
 
 	}
 
+	void UI2DObject::SetShape(UI2DShape* shape)
+	{
+		DeleteShape();
+		mShape = shape;
+	}
+
 	void UI2DObject::SetX(int x)
 	{
-		mX = x;
+		mShape->SetX(x);
 	}
 	void UI2DObject::SetY(int y)
 	{
-		mY = y;
+		mShape->SetY(y);
 	}
 	void UI2DObject::SetPosition(int x, int y)
 	{
@@ -37,10 +41,19 @@ namespace FG
 
 	int UI2DObject::GetX() const
 	{
-		return mX;
+		return mShape->GetX();
 	}
 	int UI2DObject::GetY() const
 	{
-		return mY;
+		return mShape->GetY();
+	}
+
+	void UI2DObject::DeleteShape()
+	{
+		if (mShape)
+		{
+			delete mShape;
+			mShape = nullptr;
+		}
 	}
 }

@@ -4,16 +4,19 @@
 
 namespace FG
 {
+	class UI2DShape;
+
 	class UI2DObject : public UIObject
 	{
 	public:
 		UI2DObject();
-		UI2DObject(int x, int y);
 		virtual ~UI2DObject() = 0;
 
 		virtual void Update(int dt) override;
 
 		virtual bool IsInner(int x, int y) const = 0;
+
+		void SetShape(UI2DShape* shape);
 
 		void SetX(int x);
 		void SetY(int y);
@@ -22,6 +25,8 @@ namespace FG
 		int GetX() const;
 		int GetY() const;
 	private:
-		int mX, mY;
+		void DeleteShape();
+
+		UI2DShape* mShape;
 	};
 }

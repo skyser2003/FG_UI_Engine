@@ -120,11 +120,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="UI2DNullShape.h" />
     <ClInclude Include="UI2DObject.h" />
+    <ClInclude Include="UI2DShape.h" />
     <ClInclude Include="UI3DObject.h" />
+    <ClInclude Include="UIManager.h" />
     <ClInclude Include="UIObject.h" />
+    <ClInclude Include="UIRectangleShape.h" />
+    <ClInclude Include="UIShape.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="UI2DNullShape.cpp" />
     <ClCompile Include="UI2DObject.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -132,8 +138,11 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="UI2DShape.cpp" />
     <ClCompile Include="UI3DObject.cpp" />
+    <ClCompile Include="UIManager.cpp" />
     <ClCompile Include="UIObject.cpp" />
+    <ClCompile Include="UIRectangleShape.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

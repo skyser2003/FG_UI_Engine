@@ -13,6 +13,18 @@
     <Filter Include="UIObject\3D">
       <UniqueIdentifier>{dfaaebc8-fe60-47e0-958b-ab9e7fb6a2d6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="UIManager">
+      <UniqueIdentifier>{8c190f58-1bca-4fa2-9414-e923321f57c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UIObject\Shape">
+      <UniqueIdentifier>{56fe0beb-ed30-4e7b-94da-8a292983bf6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UIObject\Shape\2D Shape">
+      <UniqueIdentifier>{9b577eab-e4ab-430f-b8f4-ba1c50b378a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UIObject\Shape\3D Shape">
+      <UniqueIdentifier>{be466854-6be9-444a-87f0-7ed4def8f9c1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="UIObject.h">
@@ -27,6 +39,21 @@
     <ClInclude Include="UI3DObject.h">
       <Filter>UIObject\3D</Filter>
     </ClInclude>
+    <ClInclude Include="UIManager.h">
+      <Filter>UIManager</Filter>
+    </ClInclude>
+    <ClInclude Include="UIShape.h">
+      <Filter>UIObject\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="UI2DShape.h">
+      <Filter>UIObject\Shape\2D Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="UI2DNullShape.h">
+      <Filter>UIObject\Shape\2D Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="UIRectangleShape.h">
+      <Filter>UIObject\Shape\2D Shape</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="UIObject.cpp">
@@ -40,6 +67,18 @@
     </ClCompile>
     <ClCompile Include="UI3DObject.cpp">
       <Filter>UIObject\3D</Filter>
+    </ClCompile>
+    <ClCompile Include="UIManager.cpp">
+      <Filter>UIManager</Filter>
+    </ClCompile>
+    <ClCompile Include="UI2DShape.cpp">
+      <Filter>UIObject\Shape\2D Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="UI2DNullShape.cpp">
+      <Filter>UIObject\Shape\2D Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="UIRectangleShape.cpp">
+      <Filter>UIObject\Shape\2D Shape</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

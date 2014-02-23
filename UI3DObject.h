@@ -12,7 +12,6 @@ namespace FG
 		virtual ~UI3DObject() = 0;
 
 		virtual void Update(int dt) override;
-
 		virtual bool IsInner(int x, int y, int z) const = 0;
 
 		void SetX(int x);
