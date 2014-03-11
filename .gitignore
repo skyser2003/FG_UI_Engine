@@ -20,3 +20,6 @@
 *.sdf
 *.opensdf
 **/ipch/*
+
+# CMake
+build
