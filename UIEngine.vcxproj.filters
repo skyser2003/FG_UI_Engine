@@ -27,58 +27,58 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="UIObject.h">
-      <Filter>UIObject</Filter>
-    </ClInclude>
-    <ClInclude Include="stdafx.h">
-      <Filter>stdafx</Filter>
-    </ClInclude>
-    <ClInclude Include="UI2DObject.h">
-      <Filter>UIObject\2D</Filter>
-    </ClInclude>
-    <ClInclude Include="UI3DObject.h">
-      <Filter>UIObject\3D</Filter>
-    </ClInclude>
-    <ClInclude Include="UIManager.h">
-      <Filter>UIManager</Filter>
-    </ClInclude>
-    <ClInclude Include="UIShape.h">
+    <ClInclude Include="source\UIObject\Shape\UIShape.h">
       <Filter>UIObject\Shape</Filter>
     </ClInclude>
-    <ClInclude Include="UI2DShape.h">
+    <ClInclude Include="source\UIObject\Shape\2DShape\UI2DShape.h">
       <Filter>UIObject\Shape\2D Shape</Filter>
     </ClInclude>
-    <ClInclude Include="UI2DNullShape.h">
+    <ClInclude Include="source\UIObject\Shape\2DShape\UIRectangleShape.h">
       <Filter>UIObject\Shape\2D Shape</Filter>
     </ClInclude>
-    <ClInclude Include="UIRectangleShape.h">
+    <ClInclude Include="source\UIObject\Shape\2DShape\UI2DNullShape.h">
       <Filter>UIObject\Shape\2D Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="source\UIObject\UIObject.h">
+      <Filter>UIObject</Filter>
+    </ClInclude>
+    <ClInclude Include="source\UIObject\3D\UI3DObject.h">
+      <Filter>UIObject\3D</Filter>
+    </ClInclude>
+    <ClInclude Include="source\UIObject\2D\UI2DObject.h">
+      <Filter>UIObject\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="source\UIManager\UIManager.h">
+      <Filter>UIManager</Filter>
+    </ClInclude>
+    <ClInclude Include="source\stdafx\stdafx.h">
+      <Filter>stdafx</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="UIObject.cpp">
+    <ClCompile Include="source\UIObject\Shape\2DShape\UIRectangleShape.cpp">
+      <Filter>UIObject\Shape\2D Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UIObject\Shape\2DShape\UI2DNullShape.cpp">
+      <Filter>UIObject\Shape\2D Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UIObject\Shape\2DShape\UI2DShape.cpp">
+      <Filter>UIObject\Shape\2D Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UIObject\UIObject.cpp">
       <Filter>UIObject</Filter>
     </ClCompile>
-    <ClCompile Include="stdafx.cpp">
-      <Filter>stdafx</Filter>
-    </ClCompile>
-    <ClCompile Include="UI2DObject.cpp">
-      <Filter>UIObject\2D</Filter>
-    </ClCompile>
-    <ClCompile Include="UI3DObject.cpp">
+    <ClCompile Include="source\UIObject\3D\UI3DObject.cpp">
       <Filter>UIObject\3D</Filter>
     </ClCompile>
-    <ClCompile Include="UIManager.cpp">
+    <ClCompile Include="source\UIObject\2D\UI2DObject.cpp">
+      <Filter>UIObject\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="source\UIManager\UIManager.cpp">
       <Filter>UIManager</Filter>
     </ClCompile>
-    <ClCompile Include="UI2DShape.cpp">
-      <Filter>UIObject\Shape\2D Shape</Filter>
-    </ClCompile>
-    <ClCompile Include="UI2DNullShape.cpp">
-      <Filter>UIObject\Shape\2D Shape</Filter>
-    </ClCompile>
-    <ClCompile Include="UIRectangleShape.cpp">
-      <Filter>UIObject\Shape\2D Shape</Filter>
+    <ClCompile Include="source\stdafx\stdafx.cpp">
+      <Filter>stdafx</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "UI2DObject.h"
 
-#include "UI2DNullShape.h"
+#include "UIObject/Shape/2DShape/UI2DNullShape.h"
 
 namespace FG
 {
