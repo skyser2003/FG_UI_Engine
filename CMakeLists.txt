@@ -24,11 +24,11 @@ SET(UI_SOURCE_SUBDIRS
 "stdafx"
 "UIManager"
 "UIObject"
-"UIObject\\\\2D"
-"UIObject\\\\3D"
-"UIObject\\\\Shape"
-"UIObject\\\\Shape\\\\2DShape"
-"UIObject\\\\Shape\\\\3DShape"
+"UIObject/2D"
+"UIObject/3D"
+"UIObject/Shape"
+"UIObject/Shape/2DShape"
+"UIObject/Shape/3DShape"
 )
 
 SET(UI_SOURCE_FILES "")
