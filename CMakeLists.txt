@@ -41,7 +41,9 @@ ADD_LIBRARY (UIEngine
 ${UI_SOURCE_FILES}
 )
 FOREACH(subdir ${UI_SOURCE_SUBDIRS})
-    SOURCE_GROUP(${subdir} FILES ${UI_SOURCE_DIR}/${subdir}/*.cpp ${UI_SOURCE_DIR}/${subdir}/*.h)
+	STRING(REPLACE "/" "\\" tempSubdir ${subdir})
+	FILE(GLOB subdir_files ${UI_SOURCE_DIR}/${subdir}/*.cpp ${UI_SOURCE_DIR}/${subdir}/*.h)
+    SOURCE_GROUP(${tempSubdir} FILES ${subdir_files})
 ENDFOREACH()
 
 INCLUDE_DIRECTORIES( ${UI_SOURCE_DIR} )
